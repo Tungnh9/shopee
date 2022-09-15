@@ -1,4 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import 'normalize.css';
+@import "normalize.css";
+
+:root {
+    --primary: #ee4d2d;
+    --primary-bg: #fef6f5;
+    --primary-gradient: linear-gradient(#ee4d2d, #ff7337);
+    --white: #fff;
+    --text-color: rgba(0, 0, 0, .8);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Helvetica_Neue, Helvetica, Arial, sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.2;
+    color: var(--text-color);
+    background-color: var(--primary-bg);
+    transition: opacity ease-in 0.2s;
+}
+
+// Fonts emmbeded
+@font-face {
+    font-family: Helvetica_Neue;
+    src: url("assets/fonts/Helvetica_Neue.woff");
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url("assets/fonts/Helvetica.woff");
+}
