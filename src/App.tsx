@@ -7,11 +7,11 @@ function App() {
     return (
         <Router>
             <Routes>
-                <div className="">
+                <>
                     {publicRoutes.map((route, index) => {
                         const Page = route.component;
 
-                        let Layout = DefaultLayout;
+                        let Layout: any = DefaultLayout;
 
                         if (route.layout) {
                             Layout = route.layout;
@@ -31,7 +31,7 @@ function App() {
                             />
                         );
                     })}
-                </div>
+                </>
             </Routes>
         </Router>
     );
